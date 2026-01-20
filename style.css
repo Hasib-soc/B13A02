@@ -1,4 +1,8 @@
+:root {
 
+   --gradient: linear-gradient(135deg, #FFFF00, #ff00aa, #6600ff);
+   --bg-choose: #351165;
+}
 * {
    margin: 0;
    padding: 0;
@@ -46,11 +50,11 @@ body {
    font-weight: bolder;
  }
 
- .bn-bt {
+ .banner button {
    display: flex;
    justify-content: center;
  }
- .b-m {
+ .message {
    background-color: #1A0B2E;
    padding: 10px 25px;
    border: 2px solid green;
@@ -61,7 +65,7 @@ body {
    justify-content: center;
    gap: 8px;
  }
- .menu-btn {
+ .menu-button {
    background: var(--gradient);
    padding: 10px 25px;
    border-radius: 25px;
@@ -72,7 +76,7 @@ body {
    gap: 8px;
  }
 
- .btn {
+ .button {
    background: var(--gradient);
    padding: 10px 25px;
    border-radius: 25px;
@@ -121,4 +125,279 @@ body {
  .nav-link a {
    color: white;
    text-decoration: none;
+ }
+ .podcast-text {
+   max-width: 1200px;
+   color: white;
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   justify-content: center;
+   gap: 20px;
+   margin: 0 auto;
+ }
+
+ .podcast-text h1 {
+   font-size: 49px;
+   font-weight: bold;
+ }
+
+
+
+ .podcast-container {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: auto;
+   justify-items: center;
+   text-align: center;
+   margin-top: 100px;
+   margin-bottom: 100px;
+ }
+
+ .podcast-card h1 {
+   color: #00FF88;
+   transition: 2s;
+ }
+
+ .podcast-card h1:hover {
+   font-size: 60px;
+   color: #ff00aa;
+ }
+ .choose {
+   background-color: #230E3D;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+ }
+
+ .choos-font {
+   font-size: 48px;
+   font-weight: bold;
+   margin-top: 50px;
+   margin-bottom: 30px;
+ }
+
+ .choose-card {
+   max-width: 1200px;
+   width: 100%;
+   height: 783px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 20px;
+ }
+
+ .choose-card-1 {
+   background-color: var(--bg-choose);
+   grid-column: span 1;
+   grid-row: span 2;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   border-radius: 20px;
+ }
+
+ .choose-card-2 {
+   background-color: var(--bg-choose);
+   grid-column: span 2;
+   grid-row: span 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   border-radius: 20px;
+ }
+
+ .choose-card-3 {
+   background-color: var(--bg-choose);
+   grid-column: span 2;
+   grid-row: span 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   border-radius: 20px;
+ }
+
+ .choose-card-4 {
+   background-color: var(--bg-choose);
+   grid-column: span 2;
+   grid-row: span 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   border-radius: 20px;
+ }
+
+ .choose-card-5 {
+   background-color: var(--bg-choose);
+   grid-column: span 1;
+   grid-row: span 1;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 10px;
+   border-radius: 20px;
+ }
+ .Feature {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }
+
+ .Episode {
+   max-width: 1200px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   text-align: center;
+ }
+
+ .youtube-container {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: auto;
+   justify-items: center;
+   gap: 30px;
+ }
+
+ .youtube-header {
+   margin-top: 50px;
+   font-size: 48px;
+   font-weight: bold;
+   text-align: center;
+ }
+
+ .youtube {
+   background-color: var(--bg-choose);
+   width: 100%;
+   position: relative;
+   border-radius: 25px;
+   padding: 20px;
+   margin-top: 30px;
+   text-align: left;
+ }
+
+ .thumbnail {
+  background-color: var(--bg-choose);
+   width: 100%;
+   display: block;
+   transition: 2s;
+ }
+
+ .thumbnail:hover {
+   width: 120%;
+ }
+
+ .Play Button {
+   position: absolute;
+   top: 20%;
+   left: 40%;
+
+
+   width: 70px;
+   height: 70px;
+   border-radius: 50%;
+
+   background: var(--gradient);
+   color: white;
+   font-size: 28px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+
+
+ .video-time {
+   color: #00FF88;
+   text-align: center;
+ }
+
+ .The Host{
+   max-width: 1200px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+
+ .host-container {
+   display: flex;
+ }
+
+ .icon {
+   display: flex;
+   gap: 20px;
+ }
+
+ .host-header {
+   margin-top: 50px;
+   font-size: 48px;
+   font-weight: bold;
+   text-align: center;
+ }
+
+ .host-description {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+ }
+ /*footer section*/
+ .footer-container {
+   width: 100%;
+   height: 412px;
+   background: url("./assets/footer-bg.png");
+   background-repeat: no-repeat;
+   background-position: top center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+ }
+
+ .fotter-icon {
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   align-items: center;
+   gap: 20px;
+ }
+
+ .icon-layout {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+ }
+ .img-icon {
+   width: 50px;
+   height: 50px;
+ }
+
+
+ .mic {
+   width: 350px;
+   height: 350px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 2s;
+ }
+
+ .mic:hover {
+   transform: scale(2.1);
+ }
+
+
+ .badge {
+   position: absolute;
+   top: 120px;
+   right: 100px;
+   background: green;
+   padding: 5px 12px;
+   border-radius: 20px;
+   padding: 10px 20px;
  }
