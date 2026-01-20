@@ -401,3 +401,104 @@ body {
    border-radius: 20px;
    padding: 10px 20px;
  }
+ @media screen and (max-width: 776px) {
+   nav {
+     justify-content: space-between;
+
+   }
+
+   .nav-link {
+     display: none;
+
+   }
+
+   .menu-btn {
+     width: 20px;
+     height: 20px;
+     background-image: url('./assets/hamburger-menu.png');
+     background-size: cover;
+     background-repeat: no-repeat;
+     border: none;
+     text-indent: -9999px;
+
+   }
+
+
+   .container {
+
+     width: 100%;
+     height: auto;
+     padding: 20px;
+   }
+
+   .container-circle {
+     width: 350px;
+     height: 350px;
+   }
+
+   .mic {
+     width: 200px;
+     height: 200px;
+   }
+
+   .badge {
+     position: absolute;
+     top: 50px;
+     right: -10px;
+
+   }
+
+   .bn-txt {
+     font-size: 36px;
+   }
+
+   .podcast-card-container {
+    grid-template-columns: repeat(2 1fr);
+     
+     gap: 20px;
+
+   }
+   .podcast-text{
+    
+     grid-column: span 2;
+     grid-row: span 2;
+     gap: 20px;
+   }
+
+   .choose-card {
+
+
+     height: auto;
+     grid-template-columns: 1fr;
+
+   }
+
+
+   .youtube-container {
+     grid-template-columns: 1fr;
+   }
+
+   .youtube {
+     width: 100%;
+   }
+
+   .host-container {
+     flex-direction: column;
+     gap: 30px;
+     text-align: center;
+   }
+
+   .icon {
+     justify-content: center;
+   }
+
+   .fotter-icon {
+     grid-template-columns: repeat(2, 1fr);
+   }
+
+   .footer-container {
+     padding: 20px;
+     text-align: center;
+   }
+
+ }
